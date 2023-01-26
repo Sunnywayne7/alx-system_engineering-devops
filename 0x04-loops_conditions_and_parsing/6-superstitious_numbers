@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#A shell script to display numbers fron 1 - 20, displays "bad luck from china" on the 4th iteration, "bad luck from japan" on the 9th iteration, and "bad luck from italy" on the 17th iteration
+
+n=1
+
+while [ $n -le 20 ]
+
+do
+
+	echo "$n" 
+
+	case  $n in
+	  "4") echo "bad luck from china";;
+	  "9") echo "bad luck from japan";;
+	  "17") echo "bad luck fron italy";;
+	esac
+	((n++))
+done
+ 
