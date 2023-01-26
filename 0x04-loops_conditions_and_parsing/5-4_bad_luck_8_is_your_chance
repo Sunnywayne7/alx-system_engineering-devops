@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#A script file that loops from 1 to 10, prints "bad luck" on the 4th iteration, "good luck" on the 8th iteration, and best school on the other iterations
+
+n=1
+
+while [ $n -le 10 ]
+
+do
+
+	if [ $n -eq 4 ]
+	    then
+		echo "bad luck"
+
+	elif [ $n -eq 8 ]
+	    then
+		echo "good luck"
+
+	else 
+		echo "Best School"
+
+	fi
+
+	((n++))
+
+done
